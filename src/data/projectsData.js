@@ -54,16 +54,16 @@ export const projectsData = [
   },
   {
     id: 4,
-    title: "Portfolio Restaurant",
+    title: "Chromomètre - Compte à rebours",
     description:
-      "Site vitrine pour restaurant fictif. Focus sur le design, l'accessibilité et les performances. HTML/CSS pur pour démontrer la maîtrise des fondamentaux.",
+      "Application de compte à rebours avec interface moderne et responsive. Permet de configurer et lancer des compteurs avec des notifications.",
     badge: "Front-End",
     badgeType: "primary",
-    technologies: ["HTML5", "CSS3", "JavaScript Vanilla", "Responsive Design"],
+    technologies: ["React", "CSS Modules", "JavaScript", "Responsive Design"],
     note: null,
-    github: "https://github.com/EvilEyes-dev/Restaurant-Portfolio.git ",
-    demo: "https://restaurant-demo.netlify.app",
-    icon: "🍽️",
+    github: "https://github.com/EvilEyes-dev/Chronom-tre.git",
+    demo: "https://chronometre-demo.netlify.app",
+    icon: "⏱️",
     gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
   },
 ];
