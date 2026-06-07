@@ -1,24 +1,24 @@
-import React from 'react';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
-import { projectsData } from '../data/projectsData';
+import React from "react";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { projectsData } from "../data/projectsData";
 
 const Projects = () => {
   return (
     <section id="projects" className="projects section">
       <div className="container">
         <h2 className="section-title">Mes Projets</h2>
-        
+
         <div className="projects-grid">
           {projectsData.map((project) => (
             <div key={project.id} className="project-card">
               {/* Image/Icon du projet */}
-              <div 
+              <div
                 className="project-image"
                 style={{ background: project.gradient }}
               >
                 <span>{project.icon}</span>
               </div>
-              
+
               {/* Contenu du projet */}
               <div className="project-content">
                 <div className="project-header">
@@ -29,11 +29,9 @@ const Projects = () => {
                     </span>
                   </div>
                 </div>
-                
-                <p className="project-description">
-                  {project.description}
-                </p>
-                
+
+                <p className="project-description">{project.description}</p>
+
                 {/* Technologies */}
                 <div className="project-tech">
                   {project.technologies.map((tech, index) => (
@@ -42,14 +40,12 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
-                
+
                 {/* Note pédagogique (si présente) */}
                 {project.note && (
-                  <div className="project-note">
-                    {project.note}
-                  </div>
+                  <div className="project-note">{project.note}</div>
                 )}
-                
+
                 {/* Liens */}
                 <div className="project-links">
                   <a

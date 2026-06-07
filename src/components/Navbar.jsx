@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-scroll';
-import { FaGithub, FaBars, FaTimes } from 'react-icons/fa';
+import React, { useState, useEffect } from "react";
+import { Link } from "react-scroll";
+import { FaGithub, FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -12,8 +12,8 @@ const Navbar = () => {
       setScrolled(window.scrollY > 50);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   // Fermer le menu mobile lors du clic sur un lien
@@ -22,28 +22,28 @@ const Navbar = () => {
   };
 
   const navLinks = [
-    { name: 'Projets', to: 'projects' },
-    { name: 'À propos', to: 'about' },
-    { name: 'Compétences', to: 'skills' },
-    { name: 'Contact', to: 'contact' }
+    { name: "Projets", to: "projects" },
+    { name: "À propos", to: "about" },
+    { name: "Compétences", to: "skills" },
+    { name: "Contact", to: "contact" },
   ];
 
   return (
-    <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+    <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="container navbar-container">
         {/* Logo */}
-        <Link 
-          to="hero" 
-          smooth={true} 
-          duration={500} 
+        <Link
+          to="hero"
+          smooth={true}
+          duration={500}
           className="navbar-logo"
-          style={{ cursor: 'pointer' }}
+          style={{ cursor: "pointer" }}
         >
           &lt;Alpha Oumar/&gt;
         </Link>
 
         {/* Desktop Menu */}
-        <ul className={`navbar-menu ${mobileMenuOpen ? 'active' : ''}`}>
+        <ul className={`navbar-menu ${mobileMenuOpen ? "active" : ""}`}>
           {navLinks.map((link) => (
             <li key={link.to}>
               <Link
@@ -60,11 +60,11 @@ const Navbar = () => {
               </Link>
             </li>
           ))}
-          
+
           {/* GitHub Link */}
           <li>
             <a
-              href="https://github.com/ItachiUchiwa-Dev"
+              href="https://github.com/EvilEyes-dev"
               target="_blank"
               rel="noopener noreferrer"
               className="navbar-github"

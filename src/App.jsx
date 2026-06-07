@@ -1,12 +1,12 @@
-import React from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Skills from './components/Skills';
-import Projects from './components/Projects';
-import Education from './components/Education';
-import Contact from './components/Contact';
-import './styles/App.css';
+import React from "react";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Education from "./components/Education";
+import Contact from "./components/Contact";
+import "./styles/App.css";
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
       </main>
       <footer className="footer">
         <div className="container">
-          <p>© 2025 Votre Nom • Développé avec React</p>
+          <p>© 2025 Alpha Oumar • Développé avec React</p>
         </div>
       </footer>
     </div>
